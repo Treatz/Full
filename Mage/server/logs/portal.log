@@ -6480,6 +6480,7 @@ hon2.7/dist-packages/twisted/scripts/twistd.py", line 29, in run
 2017-03-28T18:28:39+0000 [WebSocketClient (WebSocketProtocol),1,172.56.28.44] Closing connection: '' (1001)
 2017-03-28T18:28:39+0000 [WebSocketClient (WebSocketProtocol),0,172.56.28.44] Closing connection: '' (1001)
 2017-03-28T18:29:16+0000 [-] Timing out client: IPv4Address(TCP, '43.251.91.80', 64947)
+<<<<<<< HEAD
 2017-03-29T18:47:50+0000 [-] Loading /root/game/evennia/evennia/server/portal/portal.py...
 2017-03-29T18:47:51+0000 [-] Loaded.
 2017-03-29T18:47:51+0000 [twisted.scripts._twistd_unix.UnixAppLogger#info] twistd 17.1.0 (/usr/bin/python 2.7.12) starting up.
@@ -6539,3 +6540,5 @@ hon2.7/dist-packages/twisted/scripts/twistd.py", line 29, in run
 2017-03-29T19:46:21+0000 [-] (TCP Port 4000 Closed)
 2017-03-29T19:46:21+0000 [-] Main loop terminated.
 2017-03-29T19:46:21+0000 [twisted.scripts._twistd_unix.UnixAppLogger#info] Server Shut Down.
+=======
+>>>>>>> 3eacd0cba3952974f34cf62356c6b97a63f1a626
