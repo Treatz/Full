@@ -67,7 +67,7 @@ def attack_node(caller):
 		caller.msg(prompt="|X|[wHealth: X X X X X X /")
 		caller.db.conscious = 0
 		caller.db.alive = 1
-	if((caller.db.lethal == 0 ) and ( caller.db.bashing == 14)):
+	if((caller.db.lethal == 0 ) and ( caller.db.bashing >= 14)):
 		caller.msg(prompt="|X|[wHealth: X X X X X X X")
 		caller.db.conscious = 0
 		caller.db.alive = 0
@@ -120,7 +120,7 @@ def attack_node(caller):
 		caller.msg(prompt="|X|[wHealth: X X X X X X / ")
 		caller.db.conscious = 0
 		caller.db.alive = 1
-	if((caller.db.lethal == 1 ) and ( caller.db.bashing == 12)):
+	if((caller.db.lethal == 1 ) and ( caller.db.bashing >= 12)):
 		caller.msg(prompt="|X|[wHealth: X X X X X X X")
 		caller.db.conscious = 0
 		caller.db.alive = 0
@@ -169,7 +169,7 @@ def attack_node(caller):
 		caller.msg(prompt="|X|[wHealth: X X X X X X /")
 		caller.db.conscious = 0
 		caller.db.alive = 1
-	if((caller.db.lethal == 2 ) and ( caller.db.bashing == 11)):
+	if((caller.db.lethal == 2 ) and ( caller.db.bashing >= 11)):
 		caller.msg(prompt="|X|[wHealth: X X X X X X X")
 		caller.db.conscious = 0
 		caller.db.alive = 0
@@ -207,7 +207,7 @@ def attack_node(caller):
 		caller.msg(prompt="|X|[wHealth: X X X X X X /")
 		caller.db.conscious = 0
 		caller.db.alive = 1
-	if((caller.db.lethal == 3 ) and ( caller.db.bashing == 8)):
+	if((caller.db.lethal == 3 ) and ( caller.db.bashing >= 8)):
 		caller.msg(prompt="|X|[wHealth: X X X X X X X")
 		caller.db.conscious = 0
 		caller.db.alive = 0
@@ -237,7 +237,7 @@ def attack_node(caller):
 		caller.msg(prompt="|X|[wHealth: X X X X X X / ")
 		caller.db.conscious = 0
 		caller.db.alive = 1
-	if((caller.db.lethal == 4 ) and ( caller.db.bashing == 6)):
+	if((caller.db.lethal == 4 ) and ( caller.db.bashing >= 6)):
 		caller.msg(prompt="|X|[wHealth: X X X X X X X")
 		caller.db.conscious = 0
 		caller.db.alive = 0
@@ -259,7 +259,7 @@ def attack_node(caller):
 		caller.msg(prompt="|X|[wHealth: X X X X X X /")
 		caller.db.conscious = 0
 		caller.db.alive = 1
-	if((caller.db.lethal == 5 ) and ( caller.db.bashing == 4)):
+	if((caller.db.lethal == 5 ) and ( caller.db.bashing >= 4)):
 		caller.msg(prompt="|X|[wHealth: X X X X X X X")
 		caller.db.conscious = 0
 		caller.db.alive = 0		
@@ -272,13 +272,13 @@ def attack_node(caller):
 		caller.msg(prompt="|X|[wHealth: X X X X X X /")
 		caller.db.conscious = 0
 		caller.db.alive = 1
-	if((caller.db.lethal == 6 ) and ( caller.db.bashing == 2)):
+	if((caller.db.lethal == 6 ) and ( caller.db.bashing >= 2)):
 		caller.msg(prompt="|X|[wHealth: X X X X X X X")
 		caller.db.conscious = 0
 		caller.db.alive = 0
 		
 
-	if((caller.db.lethal == 7 ) and ( caller.db.bashing == 0)):
+	if((caller.db.lethal >= 7 ) and ( caller.db.bashing == 0)):
 		caller.msg(prompt="|X|[wHealth: X X X X X X X")
 		caller.db.conscious = 0
 		caller.db.alive = 0
@@ -340,7 +340,7 @@ def attack_node(caller):
 		caller.db.target.msg(prompt="|X|[wHealth: X X X X X X /")
 		caller.db.target.db.conscious = 0
 		caller.db.target.db.alive = 1
-	if((caller.db.target.db.lethal == 0 ) and ( caller.db.target.db.bashing == 14)):
+	if((caller.db.target.db.lethal == 0 ) and ( caller.db.target.db.bashing >= 14)):
 		caller.db.target.msg(prompt="|X|[wHealth: X X X X X X X")
 		caller.db.target.db.conscious = 0
 		caller.db.target.db.alive = 0
@@ -394,7 +394,7 @@ def attack_node(caller):
 		caller.db.target.msg(prompt="|X|[wHealth: X X X X X X / ")
 		caller.db.target.db.conscious = 0
 		caller.db.target.db.alive = 1
-	if((caller.db.target.db.lethal == 1 ) and ( caller.db.target.db.bashing == 12)):
+	if((caller.db.target.db.lethal == 1 ) and ( caller.db.target.db.bashing >= 12)):
 		caller.db.target.msg(prompt="|X|[wHealth: X X X X X X X")
 		caller.db.target.db.conscious = 0
 		caller.db.target.db.alive = 0
@@ -443,7 +443,7 @@ def attack_node(caller):
 		caller.db.target.msg(prompt="|X|[wHealth: X X X X X X /")
 		caller.db.target.db.conscious = 0
 		caller.db.target.db.alive = 1
-	if((caller.db.target.db.lethal == 2 ) and ( caller.db.target.db.bashing == 11)):
+	if((caller.db.target.db.lethal == 2 ) and ( caller.db.target.db.bashing >= 11)):
 		caller.db.target.msg(prompt="|X|[wHealth: X X X X X X X")
 		caller.db.target.db.conscious = 0
 		caller.db.target.db.alive = 0
@@ -481,7 +481,7 @@ def attack_node(caller):
 		caller.db.target.msg(prompt="|X|[wHealth: X X X X X X /")
 		caller.db.target.db.conscious = 0
 		caller.db.target.db.alive = 1
-	if((caller.db.target.db.lethal == 3 ) and ( caller.db.target.db.bashing == 8)):
+	if((caller.db.target.db.lethal == 3 ) and ( caller.db.target.db.bashing >= 8)):
 		caller.db.target.msg(prompt="|X|[wHealth: X X X X X X X")
 		caller.db.target.db.conscious = 0
 		caller.db.target.db.alive = 0
@@ -511,7 +511,7 @@ def attack_node(caller):
 		caller.db.target.msg(prompt="|X|[wHealth: X X X X X X / ")
 		caller.db.target.db.conscious = 0
 		caller.db.target.db.alive = 1
-	if((caller.db.target.db.lethal == 4 ) and ( caller.db.target.db.bashing == 6)):
+	if((caller.db.target.db.lethal == 4 ) and ( caller.db.target.db.bashing >= 6)):
 		caller.db.target.msg(prompt="|X|[wHealth: X X X X X X X")
 		caller.db.target.db.conscious = 0
 		caller.db.target.db.alive = 0
@@ -533,7 +533,7 @@ def attack_node(caller):
 		caller.db.target.msg(prompt="|X|[wHealth: X X X X X X /")
 		caller.db.target.db.conscious = 0
 		caller.db.target.db.alive = 1
-	if((caller.db.target.db.lethal == 5 ) and ( caller.db.target.db.bashing == 4)):
+	if((caller.db.target.db.lethal == 5 ) and ( caller.db.target.db.bashing >= 4)):
 		caller.db.target.msg(prompt="|X|[wHealth: X X X X X X X")
 		caller.db.target.db.conscious = 0
 		caller.db.target.db.alive = 0		
@@ -546,13 +546,13 @@ def attack_node(caller):
 		caller.db.target.msg(prompt="|X|[wHealth: X X X X X X /")
 		caller.db.target.db.conscious = 0
 		caller.db.target.db.alive = 1
-	if((caller.db.target.db.lethal == 6 ) and ( caller.db.target.db.bashing == 2)):
+	if((caller.db.target.db.lethal == 6 ) and ( caller.db.target.db.bashing >= 2)):
 		caller.db.target.msg(prompt="|X|[wHealth: X X X X X X X")
 		caller.db.target.db.conscious = 0
 		caller.db.target.db.alive = 0
 		
 
-	if((caller.db.target.db.lethal == 7 ) and ( caller.db.target.db.bashing == 0)):
+	if((caller.db.target.db.lethal >= 7 ) and ( caller.db.target.db.bashing >= 0)):
 		caller.db.target.msg(prompt="|X|[wHealth: X X X X X X X")
 		caller.db.target.db.conscious = 0
 		caller.db.target.db.alive = 0	
@@ -1035,7 +1035,7 @@ def defend_node(caller):
 		caller.msg(prompt="|X|[wHealth: X X X X X X /")
 		caller.db.conscious = 0
 		caller.db.alive = 1
-	if((caller.db.lethal == 0 ) and ( caller.db.bashing == 14)):
+	if((caller.db.lethal == 0 ) and ( caller.db.bashing >= 14)):
 		caller.msg(prompt="|X|[wHealth: X X X X X X X")
 		caller.db.conscious = 0
 		caller.db.alive = 0
@@ -1088,7 +1088,7 @@ def defend_node(caller):
 		caller.msg(prompt="|X|[wHealth: X X X X X X / ")
 		caller.db.conscious = 0
 		caller.db.alive = 1
-	if((caller.db.lethal == 1 ) and ( caller.db.bashing == 12)):
+	if((caller.db.lethal == 1 ) and ( caller.db.bashing >= 12)):
 		caller.msg(prompt="|X|[wHealth: X X X X X X X")
 		caller.db.conscious = 0
 		caller.db.alive = 0
@@ -1137,7 +1137,7 @@ def defend_node(caller):
 		caller.msg(prompt="|X|[wHealth: X X X X X X /")
 		caller.db.conscious = 0
 		caller.db.alive = 1
-	if((caller.db.lethal == 2 ) and ( caller.db.bashing == 11)):
+	if((caller.db.lethal == 2 ) and ( caller.db.bashing >= 11)):
 		caller.msg(prompt="|X|[wHealth: X X X X X X X")
 		caller.db.conscious = 0
 		caller.db.alive = 0
@@ -1175,7 +1175,7 @@ def defend_node(caller):
 		caller.msg(prompt="|X|[wHealth: X X X X X X /")
 		caller.db.conscious = 0
 		caller.db.alive = 1
-	if((caller.db.lethal == 3 ) and ( caller.db.bashing == 8)):
+	if((caller.db.lethal == 3 ) and ( caller.db.bashing >= 8)):
 		caller.msg(prompt="|X|[wHealth: X X X X X X X")
 		caller.db.conscious = 0
 		caller.db.alive = 0
@@ -1205,7 +1205,7 @@ def defend_node(caller):
 		caller.msg(prompt="|X|[wHealth: X X X X X X / ")
 		caller.db.conscious = 0
 		caller.db.alive = 1
-	if((caller.db.lethal == 4 ) and ( caller.db.bashing == 6)):
+	if((caller.db.lethal == 4 ) and ( caller.db.bashing >= 6)):
 		caller.msg(prompt="|X|[wHealth: X X X X X X X")
 		caller.db.conscious = 0
 		caller.db.alive = 0
@@ -1227,7 +1227,7 @@ def defend_node(caller):
 		caller.msg(prompt="|X|[wHealth: X X X X X X /")
 		caller.db.conscious = 0
 		caller.db.alive = 1
-	if((caller.db.lethal == 5 ) and ( caller.db.bashing == 4)):
+	if((caller.db.lethal == 5 ) and ( caller.db.bashing >= 4)):
 		caller.msg(prompt="|X|[wHealth: X X X X X X X")
 		caller.db.conscious = 0
 		caller.db.alive = 0		
@@ -1240,13 +1240,13 @@ def defend_node(caller):
 		caller.msg(prompt="|X|[wHealth: X X X X X X /")
 		caller.db.conscious = 0
 		caller.db.alive = 1
-	if((caller.db.lethal == 6 ) and ( caller.db.bashing == 2)):
+	if((caller.db.lethal == 6 ) and ( caller.db.bashing >= 2)):
 		caller.msg(prompt="|X|[wHealth: X X X X X X X")
 		caller.db.conscious = 0
 		caller.db.alive = 0
 		
 
-	if((caller.db.lethal == 7 ) and ( caller.db.bashing == 0)):
+	if((caller.db.lethal >= 7 ) and ( caller.db.bashing >= 0)):
 		caller.msg(prompt="|X|[wHealth: X X X X X X X")
 		caller.db.conscious = 0
 		caller.db.alive = 0
@@ -1307,7 +1307,7 @@ def defend_node(caller):
 		caller.db.target.msg(prompt="|X|[wHealth: X X X X X X /")
 		caller.db.target.db.conscious = 0
 		caller.db.target.db.alive = 1
-	if((caller.db.target.db.lethal == 0 ) and ( caller.db.target.db.bashing == 14)):
+	if((caller.db.target.db.lethal == 0 ) and ( caller.db.target.db.bashing >= 14)):
 		caller.db.target.msg(prompt="|X|[wHealth: X X X X X X X")
 		caller.db.target.db.conscious = 1
 		caller.db.target.db.alive = 1
@@ -1409,7 +1409,7 @@ def defend_node(caller):
 		caller.db.target.msg(prompt="|X|[wHealth: X X X X X X /")
 		caller.db.target.db.conscious = 0
 		caller.db.target.db.alive = 1
-	if((caller.db.target.db.lethal == 2 ) and ( caller.db.target.db.bashing == 11)):
+	if((caller.db.target.db.lethal == 2 ) and ( caller.db.target.db.bashing >= 11)):
 		caller.db.target.msg(prompt="|X|[wHealth: X X X X X X X")
 		caller.db.target.db.conscious = 0
 		caller.db.target.db.alive = 0
@@ -1447,7 +1447,7 @@ def defend_node(caller):
 		caller.db.target.msg(prompt="|X|[wHealth: X X X X X X /")
 		caller.db.target.db.conscious = 0
 		caller.db.target.db.alive = 1
-	if((caller.db.target.db.lethal == 3 ) and ( caller.db.target.db.bashing == 8)):
+	if((caller.db.target.db.lethal == 3 ) and ( caller.db.target.db.bashing >= 8)):
 		caller.db.target.msg(prompt="|X|[wHealth: X X X X X X X")
 		caller.db.target.db.conscious = 0
 		caller.db.target.db.alive = 0
@@ -1477,7 +1477,7 @@ def defend_node(caller):
 		caller.db.target.msg(prompt="|X|[wHealth: X X X X X X / ")
 		caller.db.target.db.conscious = 0
 		caller.db.target.db.alive = 1
-	if((caller.db.target.db.lethal == 4 ) and ( caller.db.target.db.bashing == 6)):
+	if((caller.db.target.db.lethal == 4 ) and ( caller.db.target.db.bashing >= 6)):
 		caller.db.target.msg(prompt="|X|[wHealth: X X X X X X X")
 		caller.db.target.db.conscious = 0
 		caller.db.target.db.alive = 0
@@ -1499,7 +1499,7 @@ def defend_node(caller):
 		caller.db.target.msg(prompt="|X|[wHealth: X X X X X X /")
 		caller.db.target.db.conscious = 0
 		caller.db.target.db.alive = 1
-	if((caller.db.target.db.lethal == 5 ) and ( caller.db.target.db.bashing == 4)):
+	if((caller.db.target.db.lethal == 5 ) and ( caller.db.target.db.bashing >= 4)):
 		caller.db.target.msg(prompt="|X|[wHealth: X X X X X X X")
 		caller.db.target.db.conscious = 0
 		caller.db.target.db.alive = 0		
@@ -1512,13 +1512,13 @@ def defend_node(caller):
 		caller.db.target.msg(prompt="|X|[wHealth: X X X X X X /")
 		caller.db.target.db.conscious = 0
 		caller.db.target.db.alive = 1
-	if((caller.db.target.db.lethal == 6 ) and ( caller.db.target.db.bashing == 2)):
+	if((caller.db.target.db.lethal == 6 ) and ( caller.db.target.db.bashing >= 2)):
 		caller.db.target.msg(prompt="|X|[wHealth: X X X X X X X")
 		caller.db.target.db.conscious = 0
 		caller.db.target.db.alive = 0
 		
 
-	if((caller.db.target.db.lethal == 7 ) and ( caller.db.target.db.bashing == 0)):
+	if((caller.db.target.db.lethal >= 7 ) and ( caller.db.target.db.bashing >= 0)):
 		caller.db.target.msg(prompt="|X|[wHealth: X X X X X X X")
 		caller.db.target.db.conscious = 0
 		caller.db.target.db.alive = 0	
