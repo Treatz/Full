@@ -18,7 +18,11 @@ class CmdAttack(Command):
     def func(self):
         if(self.caller.db.conscious == 1):
             self.caller.db.target = self.caller.search(self.args)
+<<<<<<< HEAD
            # self.caller.db.target.db.target = self.caller
+=======
+            self.caller.db.target.db.target = self.caller
+>>>>>>> ff3034939a62355484e53691d896962cce45bf48
             self.caller.msg("|/|rYou try to attack %s" % (self.caller.db.target))
             self.caller.db.target.msg("|/|r%s tries to attack you" % (self.caller))
             init_a = self.caller.db.dexterity + self.caller.db.wits
