@@ -4,7 +4,7 @@ from evennia.commands import cmdset
 
 class Exit(SlowExit):
     def can_traverse(self, character):
-        if character.db.conscious == 0 and character.db.alive == 1:
+        if character.db.conscious == 0:
             character.msg("You are unconscious and cannot move.")
             return
         if self.access(character, 'traverse'):
@@ -54,7 +54,7 @@ class Exit(SlowExit):
         # noinspection PyUnresolvedReferences
         class PassExit(command.Command):
             def func(self):
-                if self.obj.db.locked and not self.obj.access(self.caller, 'usekey'):
+                if self.obj.db.locked and not self.obj.access(sfelf.caller, 'usekey'):
                     self.caller.msg("You don't have a key to this exit.")
                     return
                 self.obj.at_traverse(self.caller, self.obj.destination)
