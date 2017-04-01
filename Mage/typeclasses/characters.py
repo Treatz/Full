@@ -79,7 +79,7 @@ class Character(DefaultCharacter):
         return
 
     def heal(self, *args, **kwargs):        
-        if(self.db.bashing > 0):
+        if(self.db.bashing > 0 and self.db.alive == 1):
             self.msg("You heal 1 point of damage.")
             self.db.bashing = self.db.bashing - 1
 
