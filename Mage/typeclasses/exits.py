@@ -4,7 +4,7 @@ from evennia.commands import cmdset
 
 class Exit(SlowExit):
     def can_traverse(self, character):
-        if character.db.conscious == 0:
+        if character.db.conscious == 0 and character.db.alive == 1:
             character.msg("You are unconscious and cannot move.")
             return
         if self.access(character, 'traverse'):
